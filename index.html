@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" type="image/png" href="icon.ico" >
+        <link rel="icon" type="image/png" href="icon.ico" >
+        <script language="JavaScript">
+            function ShowTime(){
+            　var NowDate=new Date();
+              var M=NowDate.getMonth()+1;
+              var d=NowDate.getDate();    
+              var y=NowDate.getFullYear();
+            　var h=NowDate.getHours();
+            　var m=NowDate.getMinutes();
+            　var s=NowDate.getSeconds();　
+            　document.getElementById('showbox').innerHTML = M+'-'+d+'-'+y+' '+h+':'+m+':'+s;
+            　setTimeout('ShowTime()',1000);
+            }
+            </script>
+        <meta charset="utf-8">   
+        <title> 鄭鈞元 </title>
+        
+    </head>
+    <body onload="ShowTime()">
+        <img src="picture.png" alt="My photo" width = "300">
+        <meta scharset="utf-8">
+        <p> 來自<a href="https://tcfsh.tc.edu.tw" target="_blank">台中一中</a> </p>
+        <p>目前就讀<a href="https://web.ee.ntu.edu.tw" target="_blank">台灣大學電機工程學系</a>
+        </p>
+        <p> my hobbies </p>
+        <ul>
+            <li>打籃球<a href="https://www.facebook.com/ntubasketballteam" target="_blank">（台大男籃</a>好強）</li>
+            <li>看電影 -> <a href="https://www.netflix.com/browse" target="_blank">netflix</a>好讚</li>
+            <li>享受美食 <a href="https://may1215may.pixnet.net/blog/post/403804949" target="_blank">美食帳</a> 不是我的</li>
+        </ul>
+        <audio loop autoplay>
+            <source src="background.mp3" type="audio/mp3">
+        </audio>
+        <div id="showbox"></div>
+    </body> 
+        
+
+</html>
